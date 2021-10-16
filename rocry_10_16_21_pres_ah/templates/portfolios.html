@@ -1,12 +1,36 @@
 {% extends "layout.html" %}
 
-{% block title %} RoCry {% endblock %}
+{% block title %} RoCry Portfolios {% endblock %}
 
 {% block body %}
 
 <h1>Welcome to RoCry!</h1>
-<h2> This page is under construction</h2>
+<br>
+<ul>
+  <h2> You are on the portfolios page</h2>
+  <li><h4> High Risk Portfolio</h4></li>
+  <li><h4> Medium-High Risk Portfolio</h4></li>
+  <li><h4> Low-Medium Risk Portfolio</h4></li>
+  <li><h4> Lower Risk Portfolio</h4></li>
+  <li><h4> Zero Risk</h4></li>
+</ul>
+<br>
 
+
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Portfolios
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="/Portfolio_Risks/html_files/high_risk.html">High Risk Portfolio</a>
+      <a class="dropdown-item" href="/Portfolio_Risks/html_files/medium_high.html">Medium-High Risk Portfolio</a>
+      <a class="dropdown-item" href="/Portfolio_Risks/html_files/low_medium.html">Low-Medium Risk Portfolio</a>
+      <a class="dropdown-item" href="/Portfolio_Risks/html_files/lower_risk.html">Lower Risk Portfolio</a>
+      <a class="dropdown-item" href="/Portfolio_Risks/html_files/zero_risk.html">Zero Risk Portfolio</a>
+    </div>
+  </div>
+  <br><br><br>
+  <h5> This page is under construction</h5>
 <img class="img-xs rounded-square " src="/static/images/images/under_construct.jpeg" alt="Under Construct" width="750" height="600">
 
 {% endblock %}

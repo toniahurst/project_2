@@ -1,12 +1,37 @@
 {% extends "layout.html" %}
 
-{% block title %} Cannibal {% endblock %}
+{% block title %} Tables {% endblock %}
 
 {% block body %}
+<img class="img-xs rounded-square " src="/static/images/images/under_construct.jpeg" alt="Under Construct" width="650" height="600">
+<div class="dropdown">
+    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Dropdown link
+    </a>
+  
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <a class="dropdown-item" href="/df">Dataframes</a>
+      <a class="dropdown-item" href="/dfcustom">Dataframes by Row</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+    </div>
+  </div>
 
-<h1>Welcome to RoCry!</h1>
-<h2> This is index.html</h2>
+  <!---
+<div class="container" >
+    <ul class="nav flex-sm-column"></ul>
+    <div class="w-30 p-3" style=background-color:black;>
+    <ul class="nav flex-sm-column">
+        <li class="nav-item">
+            <a href="/df">Dataframes</a>
+        </li>
+        <li class="nav-item">
+            <a href="/dfcustom">Dataframes by Row</a>
+        </li>
+    </ul>
+    
+  </div>
+-->
+</div>
 
-<p>Hello! And welcome to RoCry. Click on any of the links below to view the appropriate example.</p>
 
 {% endblock %}

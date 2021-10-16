@@ -8,11 +8,16 @@ import bokeh
 import pandas as pd
 from util import make_plot
 import csv
+import json
 
 df = pd.read_csv(
     "https://data.boston.gov/dataset/c8b8ef8c-dd31-4e4e-bf19-af7e4e0d7f36/resource/29e74884-a777-4242-9fcc-c30aaaf3fb10/download/economic-indicators.csv",
     parse_dates=[["Year", "Month"]],
 )
+
+with open('F_T_W copy/ada_fund.json') as f:
+    data = json.load(f)
+    print(data)
 
 
 length = len(df)
@@ -51,9 +56,17 @@ def tables():
 def about_us():
     return render_template("about_us.html", name="About Us")
 
+@app.route("/presentation")
+def presentation():
+    return render_template("presentation.html", name="Presentation")
+
 @app.route("/articles")
 def articles():
     return render_template("articles.html", name="Articles")
+
+@app.route("/proto_to_final")
+def proto_to_final():
+    return render_template("proto_to_final.html", name="Prototype to Final Version")
 
 @app.route("/portfolios")
 def portfolios():

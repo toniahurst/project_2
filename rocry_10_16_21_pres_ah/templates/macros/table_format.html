@@ -2,11 +2,11 @@
     {% set color = '' %}
     {% if header == 'logan_passengers' %}
         {% if row[header] >= 3000000 %}
-            {% set color = 'red' %}
+            {% set color = 'purple' %}
         {% elif row[header] >= 2000000 and row[header] < 3000000%}
-            {% set color = 'yellow' %}
+            {% set color = 'teal' %}
         {% else %}
-            {% set color = 'green' %}
+            {% set color = 'blue' %}
         {% endif %}
     {% endif %}
     <td bgcolor="{{ color }}" align="right">
@@ -18,3 +18,9 @@
         {% endif %}
     </td>
 {% endmacro %}
+
+
+
+
+
+
