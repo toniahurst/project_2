@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %} DataFrame Example {% endblock %}
+
+{% block body %}
+<br>
+<h2> Table Heading </h2>
+<br>
+
+<h4>The table has {{ length }} rows.</h4>
+{{ dataframe|safe }}
+{% endblock %}

@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block title %} RoCry {% endblock %}
+
+{% block body %}
+
+<div class="jumbotron jumbotron-fluid">
+    <h1 class="display-4">Welcome to RoCry</h1>
+    <p class="lead"></p>
+  </div>
+
+
+<div class="container" >
+    <ul class="nav flex-sm-column"></ul>
+    <div class="w-30 p-3" style=background-color:black;>
+    <ul class="nav flex-sm-column">
+        <li class="nav-item">
+            <a href="/df">Dataframes</a>
+        </li>
+        <li class="nav-item">
+            <a href="/dfcustom">Dataframes by Row</a>
+        </li>
+        <li class="nav-item">
+            <a href="/dfcustom">Tables</a>
+             <li class="nav-item">
+            <a href="/visualizations">Visualizations</a>
+        </li>
+        </li>
+        <li class="nav-item">
+            <a href="/portfolios">Portfolios</a>
+        <li class="nav-item">
+            <a href="/rocrybot">Meet RoCryBot</a>
+        </li>
+        </li>
+        <li class="nav-item">
+            <a href="/articles">Articles</a>
+        <li class="nav-item">
+            <a href="/about_us">About Us</a>
+        </li>
+        </li>
+        <li class="nav-item">
+            <a href="/moreinfo">More Info</a>
+        </li>
+    </ul>
+    
+  </div>
+</div>
+
+    <script type="text/javascript">
+        (function(d, m){
+            var kommunicateSettings = 
+                {"appId":"21c82409194a9603cd2d79404193fad0a","popupWidget":true,"automaticChatOpenOnNavigation":true};
+            var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+            s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+            var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+            window.kommunicate = m; m._globals = kommunicateSettings;
+        })(document, window.kommunicate || {});
+    /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+    </script>
+</body>
+</html>
+{% endblock %}
