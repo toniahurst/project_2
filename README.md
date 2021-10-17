@@ -45,7 +45,7 @@ Web-small example, corona
 
 ## Usage
 
-Open the Jupyter Lab notebook at https://github.com/toniahurst/FinTech_Module_12/blob/main/credit_risk_resampling.ipynb or download the notebook and run from the CLI.
+Open the Jupyter Lab notebook at https://github.com/DylanBowsky/project_2 or download the notebook and run from the CLI.
 
 ## Contributors
 
