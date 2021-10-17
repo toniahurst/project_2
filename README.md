@@ -37,10 +37,10 @@
 
 This program uses Python v.3.7.10, Anaconda version v.4.10.3, JupyterLab v.3.0.14, Pandas, JSON, Visual Studio Code v.1.61.1, Dotenv, Numpy, Matplotlib, IPython, Pycoingecko. It was written on (PC) macOS Catalina 10.15.7. 
 
-### APIS-Coingecko, Alpaca
-### Chatbot-Amazon Lex and Lambda and Kommunicate 
-### Presentation-Microsoft Powerpoint
-### Web-HTML, CSS
+#### APIS-Coingecko, Alpaca
+#### Chatbot-Amazon Lex and Lambda and Kommunicate 
+#### Presentation-Microsoft Powerpoint
+#### Web-HTML, CSS
 
 
 ## Usage
