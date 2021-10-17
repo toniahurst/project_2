@@ -35,7 +35,13 @@
 
 ## Technologies
 
-This program uses Python 3.7.10, Anaconda version 4.10.3, and JupyterLab 3.0.14. It also uses libraries from Pandas, Imbalanced-learn and PyDotPlus. It was written on macOS Catalina 10.15.7.
+This program uses Python v.3.7.10, Anaconda version v.4.10.3, JupyterLab v.3.0.14, Pandas, JSON, Visual Studio Code v.1.61.1, Dotenv, Numpy, Matplotlib, IPython, Pycoingecko. It was written on #### macOS Catalina 10.15.7. 
+
+APIS-Coingecko, Alpaca
+Chatbot-Amazon Lex and Lambda adn Kommunicate 
+Prsentation-Microsoft Powerpoint
+Web-small example, corona
+
 
 ## Usage
 
