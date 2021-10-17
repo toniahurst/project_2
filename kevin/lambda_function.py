@@ -1,4 +1,4 @@
-### Required Libraries ###
+ ### Required Libraries ###
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
@@ -81,38 +81,6 @@ def close(session_attributes, fulfillment_state, message):
     return response
 
 
-"""
-Step 3: Enhance the Robo Advisor with an Amazon Lambda Function
-
-In this section, you will create an Amazon Lambda function that will validate the data provided by the user on the Robo Advisor.
-
-1. Start by creating a new Lambda function from scratch and name it `recommendPortfolio`. Select Python 3.7 as runtime.
-
-2. In the Lambda function code editor, continue by deleting the AWS generated default lines of code, then paste in the starter code provided in `lambda_function.py`.
-
-3. Complete the `recommend_portfolio()` function by adding these validation rules:
-
-    * The `age` should be greater than zero and less than 65.
-    * The `investment_amount` should be equal to or greater than 5000.
-
-4. Once the intent is fulfilled, the bot should respond with an investment recommendation based on the selected risk level as follows:
-
-    * **none:** "100% bonds (AGG), 0% equities (SPY)"
-    * **low:** "60% bonds (AGG), 40% equities (SPY)"
-    * **medium:** "40% bonds (AGG), 60% equities (SPY)"
-    * **high:** "20% bonds (AGG), 80% equities (SPY)"
-
-> **Hint:** Be creative while coding your solution, you can have all the code on the `recommend_portfolio()` function, or you can split the functionality across different functions, put your Python coding skills in action!
-
-5. Once you finish coding your Lambda function, test it using the sample test events provided for this Challenge.
-
-6. After successfully testing your code, open the Amazon Lex Console and navigate to the `recommendPortfolio` bot configuration, integrate your new Lambda function by selecting it in the “Lambda initialization and validation” and “Fulfillment” sections.
-
-7. Build your bot, and test it with valid and invalid data for the slots.
-
-"""
-
-
 ### Intents Handlers ###
 def recommend_portfolio(intent_request):
     """
@@ -120,7 +88,6 @@ def recommend_portfolio(intent_request):
     """
 
     first_name = get_slots(intent_request)["firstName"]
-    age = get_slots(intent_request)["age"]
     investment_amount = get_slots(intent_request)["investmentAmount"]
     risk_level = get_slots(intent_request)["riskLevel"]
     source = intent_request["invocationSource"]
@@ -132,7 +99,7 @@ def recommend_portfolio(intent_request):
         slots = get_slots(intent_request)
 
         # Validates user's input using the validate_data function
-        validation_result = validate_data(age, investment_amount, intent_request)
+        validation_result = validate_data(investment_amount, intent_request)
 
         # If the data provided by the user is not valid,
         # the elicitSlot dialog action is used to re-prompt for the first violation detected.
@@ -160,8 +127,7 @@ def recommend_portfolio(intent_request):
         "Fulfilled",
         {
             "contentType": "PlainText",
-            "content": """Thank you for your information;
-           your portfolio will be built with these allocations: {}
+            "content": """RoCry can distribute your investment amount based on this allocation: {}.  I hope you enjoyed our interaction.  Please visit again.  Thank you!  
            """.format(
                get_recommendation(risk_level)
             ),
@@ -169,50 +135,35 @@ def recommend_portfolio(intent_request):
     )
 
 
-def validate_data(age, investment_amount, intent_request):
+def validate_data(investment_amount, intent_request):
     """
     Validates the data provided by the user.
     """
 
-    # Validate the amount, it should be > 0
-    # Since parameters are strings it's important to cast values
-    if age is not None:
-        age = parse_int(age)  
-        if age <= 0:
-            return build_validation_result(
-                False,
-                "age",
-                "The age should be greater than zero, "
-                "please provide a correct age above 0 years.",
-            )
-        elif age >=65:
-            return build_validation_result(
-                False,
-                "age",
-                "The age should be less than 65, "
-                "please provide an age below 65.",
-            )
+    # Validate the amount, it should be > 10000
     if investment_amount is not None:
         investment_amount = parse_int(investment_amount)
-        if investment_amount < 5000:
+        if investment_amount < 10000:
             return build_validation_result(
                 False,
                 "investmentAmount",
-                "The investment amount should be greater or equal to 5000, "
-                "please provide a correct investment amount greater or equal to 5000 dollars.",
+                "The investment amount should be greater or equal to 10,000.  "
+                "Please provide a corrected investment amount greater or equal to 10,000 dollars."
             )
 
-    # A True results is returned if age or amount are valid
+    # A True results is returned if investmentAmount and riskLevel are valid
     return build_validation_result(True, None, None)
 
 def get_recommendation(risk_level):
     risk_levels = {
-        "none": "100% bonds (AGG), 0% equities (SPY)",
-        "low": "60% bonds (AGG), 40% equities (SPY)",
-        "medium": "40% bonds (AGG), 60% equities (SPY)",
-        "high": "20% bonds (AGG), 80% equities (SPY)"
+        "none": "the Zero Risk portfolio - (Treasury bonds 100%)",
+        "low": "the Lower Risk portfolio - (80% bonds and 20% stocks)",
+        "low - medium": "the 'Low-Medium Risk' portfolio - (60% bonds and 40% stocks)",
+        "medium": "the 'Medium Risk' portfolio - (60% stocks and 40% bonds)",
+        "medium - high": "the 'Medium-High' portfolio - (70% stocks and 30% bonds)",
+        "high": "the 'High Risk' portfolio - (80% stocks and 20% cryptocurrency)"
     }
-    return risk_levels[risk_level.lower()]       
+    return risk_levels[risk_level.lower()]  
 
 
 ### Intents Dispatcher ###
@@ -224,7 +175,7 @@ def dispatch(intent_request):
     intent_name = intent_request["currentIntent"]["name"]
 
     # Dispatch to bot's intent handlers
-    if intent_name == "recommendPortfolio":
+    if intent_name == "RoCryPortofolioRec":
         return recommend_portfolio(intent_request)
 
     raise Exception("Intent with name " + intent_name + " not supported")
