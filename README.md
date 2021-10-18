@@ -35,7 +35,7 @@
 
 ## Technologies
 
-This program uses Python v.3.7.10, Anaconda version v.4.10.3, JupyterLab v.3.0.14, Pandas, JSON, Visual Studio Code v.1.61.1, Dotenv, Numpy, Matplotlib, IPython, Pycoingecko. It was written on (PC) macOS Catalina 10.15.7. 
+This program uses Python v.3.7.10, Anaconda version v.4.10.3, JupyterLab v.3.0.14, Pandas, JSON, Visual Studio Code v.1.61.1, Dotenv, Numpy, Matplotlib, Hvplot, IPython, Pycoingecko. It was written on a PC using Windows and also on macOS Catalina 10.15.7. 
 
 #### APIS-Coingecko, Alpaca
 #### Chatbot-Amazon Lex and Lambda and Kommunicate 
