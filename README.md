@@ -41,7 +41,7 @@ This program uses Python v.3.7.10, Anaconda version v.4.10.3, JupyterLab v.3.0.1
 #### APIS-Coingecko, Alpaca
 #### Chatbot-Amazon Lex and Lambda and Kommunicate 
 #### Presentation-Microsoft Powerpoint
-#### Web-HTML, CSS, Ticker Tape Widget from Trading View
+#### Website-HTML, CSS, Ticker Tape Widget from Trading View (rocryapp.py was inspired by https://github.com/ericmjl/minimal-flask-example)
 
 
 ## Usage
