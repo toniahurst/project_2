@@ -27,7 +27,7 @@ Our project also included RoCryBot to create a user-friendly way to communicate 
 
 ## RoCryBot: 
 
-To see a larger screen viw of the RoCryBot go here: (https://github.com/DylanBowsky/project_2/blob/main/ftw_images/govt.png)
+To see a larger screen viw of the RoCryBot go here: (https://github.com/DylanBowsky/project_2/blob/main/RoCryBot.mov)
 
 # Summary
 
