@@ -50,7 +50,7 @@ Open the Jupyter Lab notebook at https://github.com/DylanBowsky/project_2 or dow
 
 ## Contributors
 
-[Dylan Bowsky](https://github.com/DylanBowsky/project_2), [Abiy Mekuria]https://github.com/Fishamekuria2019, Kevin Mau and Tonia Hurst.
+[Dylan Bowsky](https://github.com/DylanBowsky/project_2), [Abiy Mekuria]https://github.com/Fishamekuria2019, [Kevin Mau]https://github.com/kevin-mau/project_2 and [Tonia Hurst](https://github.com/toniahurst/project2_mycopy).
 
 ## License
 Copyright (c) 2015-2021 Project Jupyter https://github.com/jupyterlab/jupyterlab/blob/master/LICENSE
