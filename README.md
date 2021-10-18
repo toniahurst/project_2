@@ -1,11 +1,11 @@
 # FinTech_Project_2 - RoCry 
 
 # Executive Summary
-RoCry is a student project and a one stop shop for cryptocurrencies, stocks and bonds. We us recommend portfolios and enhance these recommendations with machine learning to stay ahead of trends. Drawing from daily returns summation of the portfolio, RoCry uses an RF (Random Forest Classifier) Model to analyze large amounts of data while avoiding overfitting and selection bias. For our FTW (Funds to Watch) we used a Neural Network to look at daily return trends. 
+RoCry is a student project and a one stop shop for cryptocurrencies, stocks and bonds. We developed portfolios and enhance these recommendations with machine learning to stay ahead of trends. Drawing from the daily returns summation of the portfolios, RoCry uses an RF (Random Forest Classifier) Model to analyze large amounts of data while avoiding overfitting and selection bias. For our FTW (Funds to Watch) we used a Neural Network to look at daily return trends. 
 
-Drawing from a collection of 25 stocks, bonds, and cryptocurrencies, we developed five portfolios users could select base don their risk tolerance. These portfolios ranged from Zero Risk, to Lower Risk (no risk, bond focused), to Low-Medium Risk, to Medium-High Risk, and finally, to High Risk (stocks and cryptocurrencies).
+Drawing from a collection of 25 stocks, bonds, and cryptocurrencies, we developed five portfolios users could select based on individual risk tolerance. These portfolios ranged from Zero Risk (zero risk, bond focused, to Lower Risk, to Low-Medium Risk, to Medium-High Risk, and finally, to High Risk (stocks and cryptocurrencies).
 
-Our project also included RoCryBot to create a user-friendly way to communicate with investors. Developed using Amazon Lex and Amazon Lambda, and web-integrated using Kommunicate, RoCryBot is a quick an automated way to engage users in conversation around finance.
+Our project also included RoCryBot, a user-friendly way to communicate with investors. Developed using Amazon Lex and Amazon Lambda, and web-integrated using Kommunicate, RoCryBot is a quick an automated way to engage users in conversation around finance.
 
 
 # Images
