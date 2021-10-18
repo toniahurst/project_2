@@ -35,10 +35,6 @@ To see a larger screen viw of the RoCryBot go here: (https://github.com/DylanBow
 
 [Presentation](https://github.com/DylanBowsky/project_2/blob/main/RoCry_final.pptx)
 
-# Summary
-
-
-
 
 ## Technologies
 
