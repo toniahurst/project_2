@@ -27,6 +27,8 @@ Our project also included RoCryBot to create a user-friendly way to communicate 
 
 ## RoCryBot: 
 
+![Fig. 5](https://github.com/DylanBowsky/project_2/blob/main/RoCryImage2.png)
+
 To see a larger screen viw of the RoCryBot go here: (https://github.com/DylanBowsky/project_2/blob/main/RoCryBot.mov)
 
 ## Powerpoint Presentation
