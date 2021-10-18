@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block title %} RoCry Portfolios {% endblock %}
+
+{% block body %}
+
+<h1>Welcome to RoCry!</h1>
+<br>
+<ul>
+  <h2> You are on the portfolios page</h2>
+  <li><h4> High Risk Portfolio</h4></li>
+  <li><h4> Medium-High Risk Portfolio</h4></li>
+  <li><h4> Low-Medium Risk Portfolio</h4></li>
+  <li><h4> Lower Risk Portfolio</h4></li>
+  <li><h4> Zero Risk</h4></li>
+</ul>
+<br>
+
+
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Portfolios
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="/Portfolio_Risks/html_files/high_risk.html">High Risk Portfolio</a>
+      <a class="dropdown-item" href="/Portfolio_Risks/html_files/medium_high.html">Medium-High Risk Portfolio</a>
+      <a class="dropdown-item" href="/Portfolio_Risks/html_files/low_medium.html">Low-Medium Risk Portfolio</a>
+      <a class="dropdown-item" href="/Portfolio_Risks/html_files/lower_risk.html">Lower Risk Portfolio</a>
+      <a class="dropdown-item" href="/Portfolio_Risks/html_files/zero_risk.html">Zero Risk Portfolio</a>
+    </div>
+  </div>
+  <br><br><br>
+
+<!-- RoCryBot -->
+<script type="text/javascript">
+  (function(d, m){
+      var kommunicateSettings = 
+          {"appId":"21c82409194a9603cd2d79404193fad0a","popupWidget":true,"automaticChatOpenOnNavigation":true};
+      var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+      s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+      var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+      window.kommunicate = m; m._globals = kommunicateSettings;
+  })(document, window.kommunicate || {});
+</script>
+<!-- end of script-->
+
+{% endblock %}
+

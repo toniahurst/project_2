@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %} RoCry Data {% endblock %}
+
+{% block body %}
+
+<h2> Low Risk Model </h2>
+<br>
+
+<img class="img-xs rounded-square " src="/static/images/images/table_images/low_risk_model.jpeg" alt="Under Construct" width="700" height="600">
+
+<br>
+<!---
+<h2> Table Heading </h2>
+<br>
+
+<h4>The table has {{ length }} rows.</h4>
+{{ dataframe|safe }}
+--->
+
+<!-- RoCryBot -->
+<script type="text/javascript">
+    (function(d, m){
+        var kommunicateSettings = 
+            {"appId":"21c82409194a9603cd2d79404193fad0a","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+  </script>
+  <!-- end of script-->
+
+
+{% endblock %}
