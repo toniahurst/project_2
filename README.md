@@ -12,21 +12,21 @@
 
 ## Fig. 1: 
 
-![Fig. 1](https://github.com/)
+![Fig. 1](https://github.com/DylanBowsky/project_2/blob/main/ftw_images/ada.png)
 
 ## Fig. 2: 
 
-![Fig. 2](https://github.com/)
+![Fig. 2](https://github.com/DylanBowsky/project_2/blob/main/ftw_images/ba.png)
 
 ## Fig. 3: 
 
-![Fig. 3](https://github.com/)
+![Fig. 3](https://github.com/DylanBowsky/project_2/blob/main/ftw_images/btc.png)
 ## Fig. 4: 
 
-![Fig. 4](https://github.com/)
+![Fig. 4](https://github.com/DylanBowsky/project_2/blob/main/ftw_images/govt.png)
 ## Fig. 5: 
 
-![Fig. 5](https://github.com/)
+
 
 # Summary
 
