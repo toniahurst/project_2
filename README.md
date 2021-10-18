@@ -10,18 +10,18 @@ Our project also included RoCryBot, a user-friendly way to communicate with inve
 
 # Images
 
-## Fig. 1: 
+## Funds to Watch: Fig. 1: 
 
 ![Fig. 1](https://github.com/DylanBowsky/project_2/blob/main/ftw_images/ada.png)
 
-## Fig. 2: 
+## Funds to Watch: Fig. 2: 
 
 ![Fig. 2](https://github.com/DylanBowsky/project_2/blob/main/ftw_images/ba.png)
 
-## Fig. 3: 
+## Funds to Watch: Fig. 3: 
 
 ![Fig. 3](https://github.com/DylanBowsky/project_2/blob/main/ftw_images/btc.png)
-## Fig. 4: 
+## Funds to Watch: Fig. 4: 
 
 ![Fig. 4](https://github.com/DylanBowsky/project_2/blob/main/ftw_images/govt.png)
 
