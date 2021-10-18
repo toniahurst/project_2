@@ -29,7 +29,7 @@ Our project also included RoCryBot to create a user-friendly way to communicate 
 
 To see a larger screen viw of the RoCryBot go here: (https://github.com/DylanBowsky/project_2/blob/main/RoCryBot.mov)
 
-## Presentation
+## Powerpoint Presentation
 
 [Presentation](https://github.com/DylanBowsky/project_2/blob/main/RoCry_final.pptx)
 
