@@ -24,7 +24,8 @@
 ## Fig. 4: 
 
 ![Fig. 4](https://github.com/DylanBowsky/project_2/blob/main/ftw_images/govt.png)
-## Fig. 5: 
+
+## RoCryBot: 
 
 To see a larger screen viw of the RoCryBot go here: (https://github.com/DylanBowsky/project_2/blob/main/ftw_images/govt.png)
 
