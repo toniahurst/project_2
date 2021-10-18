@@ -23,7 +23,7 @@
 
 {% macro format_cell(header, row) %}
     {% set color = '' %}
-    {% if header == 'logan_passengers' %}
+    {% if header == 'price','market_cap','total_volume','daily_returns' %}
         {% if row[header] >= 3000000 %}
             {% set color = 'purple' %}
         {% elif row[header] >= 2000000 and row[header] < 3000000%}

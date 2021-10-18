@@ -9,12 +9,11 @@ import pandas as pd
 from util import make_plot
 import csv
 import json
-
-df = pd.read_csv(
-    "https://data.boston.gov/dataset/c8b8ef8c-dd31-4e4e-bf19-af7e4e0d7f36/resource/29e74884-a777-4242-9fcc-c30aaaf3fb10/download/economic-indicators.csv",
-    parse_dates=[["Year", "Month"]],
-)
-
+import hvplot.pandas
+"""
+Read in the JSON files
+"""
+df = pd.read_json('F_T_W copy/ada_fund.json')
 
 length = len(df)
 app = Flask(__name__)
@@ -42,11 +41,11 @@ def rocrybot():
 
 @app.route("/visualizations")
 def visualizations():
-    return render_template("visualizations.html")
+    return render_template("visualizations.html", name="Visualizations")
 
 @app.route("/tables")
 def tables():
-    return render_template("tables.html")
+    return render_template("tables.html", name="Tables")
 
 @app.route("/about_us")
 def about_us():
@@ -60,7 +59,6 @@ def articles():
 def portfolios():
     return render_template("portfolios.html", name="Portfolios")
 
-
 @app.route("/moreinfo")
 def more_info():
     return render_template("moreinfo.html")
@@ -68,6 +66,8 @@ def more_info():
 @app.route("/home")
 def home():
     return render_template("home.html")
+
+
 
 
 if __name__ == "__main__":
