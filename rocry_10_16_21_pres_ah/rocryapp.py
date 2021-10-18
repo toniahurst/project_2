@@ -15,17 +15,13 @@ df = pd.read_csv(
     parse_dates=[["Year", "Month"]],
 )
 
-with open('F_T_W copy/ada_fund.json') as f:
-    data = json.load(f)
-    print(data)
-
 
 length = len(df)
 app = Flask(__name__)
 
 
 @app.route("/")
-def home():
+def index():
     return render_template("index.html")
 
 @app.route("/df")
@@ -56,26 +52,22 @@ def tables():
 def about_us():
     return render_template("about_us.html", name="About Us")
 
-@app.route("/presentation")
-def presentation():
-    return render_template("presentation.html", name="Presentation")
-
 @app.route("/articles")
 def articles():
     return render_template("articles.html", name="Articles")
 
-@app.route("/proto_to_final")
-def proto_to_final():
-    return render_template("proto_to_final.html", name="Prototype to Final Version")
-
 @app.route("/portfolios")
 def portfolios():
-    return render_template("portfolios.html", name="Articles")
+    return render_template("portfolios.html", name="Portfolios")
 
 
 @app.route("/moreinfo")
 def more_info():
     return render_template("moreinfo.html")
+
+@app.route("/home")
+def home():
+    return render_template("home.html")
 
 
 if __name__ == "__main__":
